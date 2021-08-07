@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Visual Studio Project\\C#\\WinFormsTetris\\WinFormsTetris\\WinFormsTetris.csproj",
+      "projectUniqueName": "F:\\Visual Studio Project\\CsPjec04\\WinFormsTetris\\WinFormsTetris\\WinFormsTetris.csproj",
       "projectName": "WinFormsTetris",
-      "projectPath": "F:\\Visual Studio Project\\C#\\WinFormsTetris\\WinFormsTetris\\WinFormsTetris.csproj",
+      "projectPath": "F:\\Visual Studio Project\\CsPjec04\\WinFormsTetris\\WinFormsTetris\\WinFormsTetris.csproj",
       "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-      "outputPath": "F:\\Visual Studio Project\\C#\\WinFormsTetris\\WinFormsTetris\\obj\\",
+      "outputPath": "F:\\Visual Studio Project\\CsPjec04\\WinFormsTetris\\WinFormsTetris\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
