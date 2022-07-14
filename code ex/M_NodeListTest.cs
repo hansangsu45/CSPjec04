@@ -93,7 +93,7 @@ namespace MDicTest
             }
 
             node.prev.next = node.next;
-            node.next.prev = node.next;
+            node.next.prev = node.prev;
 
             if (index == 0) head = head.next;
 
@@ -128,6 +128,12 @@ namespace MDicTest
                 node = node.next;
             }
             return false;
+        }
+
+        public void Clear()
+        {
+            head = null;
+            size = 0;
         }
     }
 
@@ -168,6 +174,15 @@ namespace MDicTest
             nli.Remove(14);
             WriteLine(nli[0]);
             WriteLine(nli.Count);
+
+            nli.Clear();
+
+            for (uint i = 1; i < 10; i++) nli.Add(i);
+
+            nli.RemoveAt(2);
+
+            WriteLine();
+            for (int i = 0; i < nli.Count; i++) Write(nli[i]);
         }
     }
 }

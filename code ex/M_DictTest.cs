@@ -20,11 +20,16 @@ namespace MDicTest
     {
         private readonly int maxLength = 5000;
 
+        private int count;
+
+        public int Count => count;
+
         public Node<V>[]? values;
 
         public SDict()
         {
             values = new Node<V>[maxLength];
+            count = 0;
         }
 
         public V this[K k]
@@ -47,6 +52,7 @@ namespace MDicTest
             if (values[hashCode] == null)
             {
                 values[hashCode] = new Node<V>(v);
+                count++;
             }
             else
             {
@@ -68,6 +74,13 @@ namespace MDicTest
         public void Remove(K k)
         {
             values[GetHashCode(k)] = null;
+            count--;
+        }
+
+        public void Clear()
+        {
+            values = new Node<V>[maxLength];
+            count = 0;
         }
     }
 
