@@ -49,7 +49,7 @@ namespace MDicTest
         {
             if (size == 0)
             {
-                head = new Node<T>(default, null, null);
+                head = new Node<T>(data, null, null);
             }
             else
             {
